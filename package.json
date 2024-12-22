@@ -1,0 +1,36 @@
+
+{
+  "name": "blogging-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "server": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.2",
+    "supertest": "^7.0.0"
+  },
+  "jest": {  
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": ["<rootDir>/tests/setup.js"],
+    "testMatch": ["**/?(*.)+(spec|test).[jt]s?(x)", "**/__tests__/**/*.[jt]s?(x)"]
+  }
+}
+
