@@ -13,6 +13,10 @@ connectToMongodb();
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogRoutes);
+app.get("/", (req, res) => {
+    res.send("Welcome to the Blogging API! Access endpoints like /api/auth and /api/blogs");
+  });
+  
 
 // Start the server
 const PORT = process.env.PORT || 5000;
