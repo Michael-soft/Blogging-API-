@@ -14,10 +14,9 @@ connectToMongodb();
 app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogRoutes);
 app.get("/", (req, res) => {
-    res.send("Welcome to the Blogging API! Access endpoints like /api/auth and /api/blogs");
+res.send("Welcome to the Blogging API! Access endpoints like /api/auth and /api/blogs");
   });
   
-
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port http://localhost:${PORT}`)); // Fixed string interpolation
